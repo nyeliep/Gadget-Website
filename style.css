@@ -94,11 +94,6 @@ background-color:#8892e9;}
   color: #202020;
   line-height: 60px;
 }
-.home-text strong{
-  color: #4eb060;
-  font-size: 1.4rem;
-  margin-top: 4px;
-}
 .search-box{
   background-color: #ffffff;
   height: 50px;
@@ -116,7 +111,6 @@ background-color:#8892e9;}
 }
 .search-box .search-input{
   height: 40px;
-  /* border: none; */
   width: 50%;
   padding: 0px 10px;
   outline: none;
@@ -353,6 +347,12 @@ font-weight: lighter;
   height: 60px;
   padding: 10px;
 }
+.call{
+  font-size: 2rem;
+}
+.call-txt{
+  font-size: 1.2rem;
+}
 /*footer*/
 footer{
   background-color: #1b1d1f;
@@ -495,11 +495,58 @@ footer{
   } 
   .navigation .menu-btn:checked ~ .menu{
       display: block;
-  }   
+  }
+  .search-box .search-input{
+    height: 40px;
+    width: 90%;
+    padding: 0px 10px;
+    outline: none;
+  }
+  .cat{
+    margin-top: -17%;
+    width: 50px;
+  }
+  .cat img{
+    height: 80px;
+    padding: 5px;
+  } 
+  .home-text{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 50px;
+    position: relative;
+    margin-top: 10%;
+    
+  }
+  .home-text h1{
+    font-size: 2rem;
+    color: #393939;
+    line-height: 60px;
+  }
+  .home-text p{
+    width: 200px;
+    color: #ecf7ee;
+    font-size: 15px;
+  }
 
   #home{
       height: 400px;
       background-size: 500px;
+  }
+  .btn1{
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    background: yellow;
+  }
+  .btn2{
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    
   }
   .category-container{
       flex-wrap: wrap;
@@ -590,12 +637,24 @@ footer{
     align-items: center;
     font-size: 2rem;
   }
+  .subscription{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ecf7ee;
+    height: 30vh;
+  }
+  .call{
+    display: none;
+  }
+  .call-txt{
+    font-size: 1.2rem;
+  
+  }
   .footer-container{
       display: grid;
       grid-template-columns: 1fr 1fr;
   }
-  .footer-links{
-      text-align: center;
-  }
-
+ 
 }
